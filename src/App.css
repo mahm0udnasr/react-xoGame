@@ -1,0 +1,32 @@
+.playerRole {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px 0;
+  background-color: #1f3540;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+}
+.playerRole span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playerRole span::before {
+  content: "*";
+  padding-right: 5px;
+  color: #26ffcb;
+}
+
+@media (max-width: 1030px) {
+  .playerRole {
+    position: static;
+    width: 80%;
+    margin: 20px auto;
+  }
+}
